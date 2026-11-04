@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://b42nojolgosu6"]
+
+[ext_resource type="PackedScene" uid="uid://dj3t0fp0f6bjh" path="res://scenes/hud.tscn" id="1_o5qli"]
+[ext_resource type="Script" uid="uid://cyxadafbyb1bi" path="res://scripts/main.gd" id="1_sugp2"]
+[ext_resource type="PackedScene" uid="uid://c4x0v54lrbhj" path="res://scenes/player.tscn" id="2_0wfyh"]
+
+[node name="Main" type="Node2D" unique_id=345354006]
+script = ExtResource("1_sugp2")
+
+[node name="player" parent="." unique_id=1853084260 instance=ExtResource("2_0wfyh")]
+position = Vector2(131, 103)
+
+[node name="hud" parent="." unique_id=154780480 instance=ExtResource("1_o5qli")]
